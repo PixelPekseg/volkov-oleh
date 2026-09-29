@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volkov Oleh – Férfi fodrászat</title>
+  <meta name="description" content="Volkov Oleh – férfi fodrászat Budapesten. Hajvágás, borotválás, szakálligazítás és stílusozás. Foglalj időpontot online pár kattintással.">
+
+  <!--
+    FONTOS: amint megvan a saját domain neved, mindkét nyelvi fájlban
+    (index.html, en/index.html) cseréld le a
+    "https://www.YOUR-DOMAIN-HERE.com" placeholdert a valódi domainedre
+    (a canonical, hreflang, Open Graph linkeknél és a sitemap.xml-ben is).
+  -->
+  <link rel="canonical" href="https://www.YOUR-DOMAIN-HERE.com/">
+  <link rel="alternate" hreflang="hu" href="https://www.YOUR-DOMAIN-HERE.com/">
+  <link rel="alternate" hreflang="en" href="https://www.YOUR-DOMAIN-HERE.com/en/">
+  <link rel="alternate" hreflang="x-default" href="https://www.YOUR-DOMAIN-HERE.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Volkov Oleh – Férfi fodrászat">
+  <meta property="og:description" content="Hajvágás, borotválás, szakálligazítás és stílusozás Budapesten. Foglalj időpontot online.">
+  <meta property="og:url" content="https://www.YOUR-DOMAIN-HERE.com/">
+  <meta property="og:locale" content="hu_HU">
+
+  <!-- Cseréld le / töltsd fel a images/favicon.png fájlt a saját logódra/ikonodra -->
+  <link rel="icon" type="image/png" href="images/favicon.png?v=3">
+  <link rel="apple-touch-icon" href="images/favicon.png?v=3">
+  <link rel="stylesheet" href="style.css?v=11">
+
+  <!-- Strukturált adat: segít a Google-nek megérteni, hogy ez egy fodrászat
+       (megjeleníthet nyitvatartást, címet, telefonszámot közvetlenül a
+       keresési találatnál). Frissítsd a "url", "telephone" és "address"
+       mezőket, ha változik a domain/telefonszám/cím. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "Volkov Oleh – Férfi fodrászat",
+    "url": "https://www.YOUR-DOMAIN-HERE.com/",
+    "telephone": "+36305258133",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Király utca 100",
+      "postalCode": "1068",
+      "addressLocality": "Budapest",
+      "addressCountry": "HU"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "18:00" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Fejléc / navigáció -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">Volkov Oleh <span>Férfi fodrászat</span></a>
+
+      <!-- Hamburger gomb mobil nézethez -->
+      <button class="nav-toggle" id="navToggle" aria-label="Menü megnyitása">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="#home">Kezdőlap</a></li>
+          <li><a href="#about">Rólam</a></li>
+          <li><a href="#services">Szolgáltatások</a></li>
+          <li><a href="#gallery">Galéria</a></li>
+          <li><a href="#hours">Nyitvatartás</a></li>
+          <li><button id="Anywhere_button_nav" class="nav-book-btn anywhere-book-now-button" type="button" data-booking-url="https://kissacoe.setmore.com/hu/categories/e82cf259-3da5-4e70-a3a9-46f890464c55" data-new-tab="false">Időpontfoglalás</button></li>
+          <li><a href="#location">Megközelíthetőség</a></li>
+        </ul>
+
+        <!-- Nyelvválasztó: csak az aktuális nyelv látszik, kattintásra felugró ablak (modal) nyílik -->
+        <div class="lang-switch">
+          <button class="lang-current" id="langToggle" type="button" aria-haspopup="dialog" aria-expanded="false">
+            <svg class="flag" viewBox="0 0 30 20"><rect width="30" height="6.67" fill="#CE2939"/><rect y="6.67" width="30" height="6.67" fill="#fff"/><rect y="13.34" width="30" height="6.66" fill="#477050"/></svg>
+            HU
+            <svg class="chevron" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Kezdőlap / Hero szekció -->
+  <section id="home" class="hero">
+    <div class="hero-overlay">
+      <div class="container hero-content">
+        <h1>Volkov Oleh – Férfi fodrászat</h1>
+        <p>Stílus. Jellem. A te történeted.</p>
+        <button id="Anywhere_button_hero" class="btn btn-primary anywhere-book-now-button" type="button" data-booking-url="https://kissacoe.setmore.com/hu/categories/e82cf259-3da5-4e70-a3a9-46f890464c55" data-new-tab="false">Időpontot foglalok</button>
+      </div>
+    </div>
+    <!-- Cseréld le a images/hero.jpg fájlt a saját header/hero képedre -->
+    <img src="images/hero.jpg" alt="Volkov Oleh Férfi fodrászat enteriőr" class="hero-bg">
+  </section>
+
+  <!-- Rólam szekció -->
+  <section id="about" class="section about">
+    <div class="container about-inner">
+      <div class="about-text">
+        <h2>Rólam</h2>
+        <p>
+          💈 A nagyszerű stílus nem ér véget azzal, hogy felkelsz a székből.
+          A Volkovnál kizárólag professzionális termékekkel dolgozunk — mint
+          az Uppercut Deluxe matt pomádé a tiszta, természetes és fénymentes
+          hatásért, valamint a Nishman formázó spray a tartós fixálásért. A
+          megfelelő termék gondoskodik róla, hogy a frizurád formája és éles
+          vonalai a látogatásod után is még sokáig megmaradjanak. Kérdezd meg
+          Oleht, mi illik a hajadhoz — pontosan tudni fogja, mit ajánljon
+          neked! 💈
+        </p>
+      </div>
+      <div class="about-image">
+        <!-- Cseréld le a images/rolunk.jpg fájlt a saját képedre -->
+        <img src="images/rolunk.jpg" alt="Volkov Oleh, a fodrász">
+      </div>
+    </div>
+  </section>
+
+  <!-- Szolgáltatások szekció -->
+  <section id="services" class="section services">
+    <div class="container">
+      <h2>Szolgáltatások</h2>
+      <p class="section-lead">Az alábbi árak és időtartamok tájékoztató jellegűek.</p>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Hajvágás</h3>
+          <p class="service-desc">Klasszikus vagy modern férfi hajvágás, teljesen az egyéni stílusodra szabva.</p>
+          <p class="service-meta"><span class="price">6 000 Ft</span> · <span class="duration">30 perc</span></p>
+          <button id="Anywhere_button_haircut" class="service-book-btn anywhere-book-now-button" type="button" data-booking-url="https://kissacoe.setmore.com/hu/services/9b51a99e-cfee-4a39-af3b-9b27ce302509" data-new-tab="false">Foglalás</button>
+        </div>
+
+        <div class="service-card">
+          <h3>Borotválás</h3>
+          <p class="service-desc">Hagyományos, forró törölközős borotválás egyenes borotvával.</p>
+          <p class="service-meta"><span class="price">5 000 Ft</span> · <span class="duration">30 perc</span></p>
+          <button id="Anywhere_button_shaving" class="service-book-btn anywhere-book-now-button" type="button" data-booking-url="https://kissacoe.setmore.com/hu/categories/e82cf259-3da5-4e70-a3a9-46f890464c55" data-new-tab="false">Foglalás</button>
+        </div>
+
+        <div class="service-card">
+          <h3>Szakálligazítás</h3>
+          <p class="service-desc">Precíz szakállformázás és -igazítás, az arcformádhoz illesztve.</p>
+          <p class="service-meta"><span class="price">3 500 Ft</span> · <span class="duration">20 perc</span></p>
+          <button id="Anywhere_button_beard" class="service-book-btn anywhere-book-now-button" type="button" data-booking-url="https://kissacoe.setmore.com/hu/categories/e82cf259-3da5-4e70-a3a9-46f890464c55" data-new-tab="false">Foglalás</button>
+        </div>
+
+        <div class="service-card">
+          <h3>Stílusozás</h3>
+          <p class="service-desc">Hajformázás prémium termékekkel, hogy a frizurád a látogatás után is tartsa a formáját.</p>
+          <p class="service-meta"><span class="price">2 500 Ft</span> · <span class="duration">15 perc</span></p>
+          <button id="Anywhere_button_styling" class="service-book-btn anywhere-book-now-button" type="button" data-booking-url="https://kissacoe.setmore.com/hu/categories/e82cf259-3da5-4e70-a3a9-46f890464c55" data-new-tab="false">Foglalás</button>
+        </div>
+      </div>
+
+      <!--
+        Setmore "Book Now" widget szkriptje – egyszer töltjük be az egész
+        oldalra. A fejlécben (nav + hero gomb) lévő foglalás-gombok korábban
+        a HTML-ben vannak, de mivel ez a szkript nem async/defer, csak
+        akkor fut le, amikor a böngésző idáig ért a beolvasásban – vagyis a
+        fentebbi gombok már mind a DOM részei, a szkript ezeket is megtalálja
+        és bekapcsolja. Ha új "Foglalás" gombot adsz hozzá, ezt a szkriptet
+        nem kell megint beszúrnod, elég a data-booking-url-lel ellátott
+        gomb + az "anywhere-book-now-button" class.
+      -->
+      <script id="anywhere_book_now_script" src="https://assets.setmore.com/integration/book-now/live/v1/anywhere-book-now.js"></script>
+    </div>
+  </section>
+
+  <!-- Galéria szekció -->
+  <!--
+    A képek automatikusan töltődnek be a script.js-ből, a GitHub API
+    segítségével, közvetlenül a gallery/ mappa aktuális tartalmából - a
+    fájlnév nem számít, csak töltsd fel a képet a mappába és pushold.
+    A data-gallery-* attribútumok mondják meg a szkriptnek, melyik
+    repóban/mappában keresse a képeket.
+  -->
+  <section id="gallery" class="section gallery">
+    <div class="container">
+      <h2>Galéria</h2>
+      <p class="section-lead">Néhány kép a szalonunkból és az elkészült munkáinkból.</p>
+
+      <div
+        class="gallery-grid"
+        id="galleryGrid"
+        data-gallery-owner="PixelPekseg"
+        data-gallery-repo="selyemhaj-demo"
+        data-gallery-path="gallery"
+        data-gallery-alt="Galéria kép a szalonból"
+        data-gallery-local="haircut-1.jpg,haircut-2.jpg,haircut-3.jpg,haircut-4.jpg,haircut-5.jpg,haircut-6.jpg,haircut-7.jpg"
+        data-gallery-local-path="gallery">
+      </div>
+      <p class="section-lead gallery-empty" id="galleryEmpty" hidden>Hamarosan ide kerülnek a galéria képei.</p>
+    </div>
+  </section>
+
+  <!-- Nyitvatartás szekció -->
+  <section id="hours" class="section hours">
+    <div class="container">
+      <h2>Nyitvatartás</h2>
+      <table class="hours-table">
+        <tbody>
+          <tr><td>Hétfő</td><td>8:00 – 18:00</td></tr>
+          <tr><td>Kedd</td><td>8:00 – 18:00</td></tr>
+          <tr><td>Szerda</td><td>8:00 – 18:00</td></tr>
+          <tr><td>Csütörtök</td><td>8:00 – 18:00</td></tr>
+          <tr><td>Péntek</td><td>8:00 – 18:00</td></tr>
+          <tr><td>Szombat</td><td>9:00 – 18:00</td></tr>
+          <tr><td>Vasárnap</td><td class="closed">Zárva</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Megközelíthetőség szekció (Google Maps) -->
+  <!--
+    A cím mindkét helyen (iframe src és a gomb href-je) ugyanaz:
+    "Király utca 100, 1068 Budapest" – ha módosítod a valódi címre,
+    mindkét helyen cseréld le ugyanarra a szövegre.
+  -->
+  <section id="location" class="section location">
+    <div class="container">
+      <h2>Megközelíthetőség</h2>
+      <p class="section-lead">Király utca 100, 1068 Budapest</p>
+
+      <div class="map-wrapper">
+        <iframe
+          src="https://www.google.com/maps?q=Király utca 100, 1068 Budapest&output=embed"
+          width="100%"
+          height="350"
+          style="border:0"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Volkov Oleh Férfi fodrászat térképen">
+        </iframe>
+      </div>
+
+      <div class="map-cta">
+        <a
+          class="btn btn-primary"
+          href="https://www.google.com/maps/dir/?api=1&destination=Király utca 100, 1068 Budapest"
+          target="_blank"
+          rel="noopener noreferrer">
+          Útvonaltervezés indítása
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lábléc -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <!--
+        Elérhetőségek: az Instagram linket és a telefonszámot cseréld le,
+        ha változik (a telefon href nemzetközi formátumban legyen, '+' és
+        szóközök nélkül, pl. 36305258133).
+      -->
+      <div class="footer-contact">
+        <h3>Elérhetőségek</h3>
+        <div class="contact-links">
+          <a class="contact-link" href="https://www.instagram.com/ferrumwolf" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+              <circle cx="12" cy="12" r="4"></circle>
+              <circle cx="17.3" cy="6.7" r="0.6" fill="currentColor" stroke="none"></circle>
+            </svg>
+            <span>Instagram</span>
+          </a>
+
+          <a class="contact-link" href="https://wa.me/36305258133?text=Szia%2C%20szeretn%C3%A9k%20id%C5%91pontot%20foglalni" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 20l1.2-4.2A8 8 0 1 1 8.4 19L4 20z"></path>
+              <path d="M8.7 9.6c.3 2.6 2.3 4.6 4.9 4.9"></path>
+            </svg>
+            <span>WhatsApp</span>
+          </a>
+
+          <a class="contact-link" href="tel:+36305258133" aria-label="Telefon">
+            <svg viewBox="0 0 24 24" fill="currentColor" stroke="none">
+              <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1L6.6 10.8z"></path>
+            </svg>
+            <span>+36 30 525 8133</span>
+          </a>
+        </div>
+      </div>
+
+      <p>&copy; <span id="year"></span> Volkov Oleh – Férfi fodrászat. Minden jog fenntartva.</p>
+      <p>Király utca 100, 1068 Budapest</p>
+    </div>
+  </footer>
+
+  <!-- Nyelvválasztó felugró ablak (modal) -->
+  <div class="lang-modal" id="langModal">
+    <div class="lang-modal-backdrop" id="langModalBackdrop"></div>
+    <div class="lang-modal-box" role="dialog" aria-modal="true" aria-label="Nyelv kiválasztása">
+      <div class="lang-modal-header">
+        <h3>Nyelv kiválasztása</h3>
+        <button class="lang-modal-close" id="langModalClose" type="button" aria-label="Bezárás">&times;</button>
+      </div>
+      <div class="lang-modal-list">
+        <a class="lang-modal-option active" href="index.html">
+          <svg class="flag" viewBox="0 0 30 20"><rect width="30" height="6.67" fill="#CE2939"/><rect y="6.67" width="30" height="6.67" fill="#fff"/><rect y="13.34" width="30" height="6.66" fill="#477050"/></svg>
+          Magyar
+        </a>
+        <a class="lang-modal-option" href="en/index.html">
+          <svg class="flag" viewBox="0 0 30 20"><rect width="30" height="20" fill="#00247D"/><path d="M0,0 L30,20 M30,0 L0,20" stroke="#fff" stroke-width="4"/><path d="M0,0 L30,20 M30,0 L0,20" stroke="#CF142B" stroke-width="2"/><path d="M15,0 V20 M0,10 H30" stroke="#fff" stroke-width="6"/><path d="M15,0 V20 M0,10 H30" stroke="#CF142B" stroke-width="3.6"/></svg>
+          English
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Galéria kép nagyítása felugró ablakban (lightbox) -->
+  <div class="lightbox" id="galleryLightbox">
+    <div class="lightbox-backdrop" id="galleryLightboxBackdrop"></div>
+    <button class="lightbox-close" id="galleryLightboxClose" type="button" aria-label="Bezárás">&times;</button>
+    <img class="lightbox-img" id="galleryLightboxImg" src="" alt="">
+  </div>
+
+  <script src="script.js?v=17"></script>
+</body>
+</html>

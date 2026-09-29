@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volkov Oleh – Men's hairdresser</title>
+  <meta name="description" content="Volkov Oleh – men's hairdresser in Budapest. Haircuts, shaving, beard trimming and styling. Book your appointment online in a few clicks.">
+
+  <!-- FONTOS: cseréld le a placeholdert a valódi domainedre (lásd index.html) -->
+  <link rel="canonical" href="https://www.YOUR-DOMAIN-HERE.com/en/">
+  <link rel="alternate" hreflang="hu" href="https://www.YOUR-DOMAIN-HERE.com/">
+  <link rel="alternate" hreflang="en" href="https://www.YOUR-DOMAIN-HERE.com/en/">
+  <link rel="alternate" hreflang="x-default" href="https://www.YOUR-DOMAIN-HERE.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Volkov Oleh – Men's hairdresser">
+  <meta property="og:description" content="Haircuts, shaving, beard trimming and styling in Budapest. Book your appointment online.">
+  <meta property="og:url" content="https://www.YOUR-DOMAIN-HERE.com/en/">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Cseréld le / töltsd fel a images/favicon.png fájlt a saját logódra/ikonodra -->
+  <link rel="icon" type="image/png" href="../images/favicon.png?v=3">
+  <link rel="apple-touch-icon" href="../images/favicon.png?v=3">
+  <link rel="stylesheet" href="../style.css?v=11">
+</head>
+<body>
+
+  <!-- Fejléc / navigáció -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">Volkov Oleh <span>Men's hairdresser</span></a>
+
+      <!-- Hamburger gomb mobil nézethez -->
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#hours">Hours</a></li>
+          <li><button id="Anywhere_button_nav" class="nav-book-btn anywhere-book-now-button" type="button" data-booking-url="https://kissacoe.setmore.com/en/categories/218d60ea-d850-452d-99a3-15b8fa4974aa" data-new-tab="false">Booking</button></li>
+          <li><a href="#location">Location</a></li>
+        </ul>
+
+        <!-- Nyelvválasztó: csak az aktuális nyelv látszik, kattintásra felugró ablak (modal) nyílik -->
+        <div class="lang-switch">
+          <button class="lang-current" id="langToggle" type="button" aria-haspopup="dialog" aria-expanded="false">
+            <svg class="flag" viewBox="0 0 30 20"><rect width="30" height="20" fill="#00247D"/><path d="M0,0 L30,20 M30,0 L0,20" stroke="#fff" stroke-width="4"/><path d="M0,0 L30,20 M30,0 L0,20" stroke="#CF142B" stroke-width="2"/><path d="M15,0 V20 M0,10 H30" stroke="#fff" stroke-width="6"/><path d="M15,0 V20 M0,10 H30" stroke="#CF142B" stroke-width="3.6"/></svg>
+            EN
+            <svg class="chevron" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Kezdőlap / Hero szekció -->
+  <section id="home" class="hero">
+    <div class="hero-overlay">
+      <div class="container hero-content">
+        <h1>Volkov Oleh – Men's hairdresser</h1>
+        <p>Style. Character. Your Story.</p>
+        <button id="Anywhere_button_hero" class="btn btn-primary anywhere-book-now-button" type="button" data-booking-url="https://kissacoe.setmore.com/en/categories/218d60ea-d850-452d-99a3-15b8fa4974aa" data-new-tab="false">Book an appointment</button>
+      </div>
+    </div>
+    <!-- Cseréld le a images/hero.jpg fájlt a saját header/hero képedre -->
+    <img src="../images/hero.jpg" alt="Volkov Oleh Men's hairdresser interior" class="hero-bg">
+  </section>
+
+  <!-- Rólam szekció -->
+  <section id="about" class="section about">
+    <div class="container about-inner">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          💈 Great style doesn't end when you leave the chair. At Volkov, we
+          work only with pro-grade products — like Uppercut Deluxe matte
+          pomade for a clean, natural, no-shine finish, and Nishman styling
+          spray to lock it all in. The right product makes your cut hold
+          shape and look sharp long after your visit. Ask Oleh what suits
+          your hair — he'll set you up right. 💈
+        </p>
+      </div>
+      <div class="about-image">
+        <!-- Cseréld le a images/rolunk.jpg fájlt a saját képedre -->
+        <img src="../images/rolunk.jpg" alt="Volkov Oleh, the barber">
+      </div>
+    </div>
+  </section>
+
+  <!-- Szolgáltatások szekció -->
+  <section id="services" class="section services">
+    <div class="container">
+      <h2>Services</h2>
+      <p class="section-lead">The prices and durations below are for guidance only.</p>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Haircut</h3>
+          <p class="service-desc">Classic or modern men's haircut, tailored entirely to your personal style.</p>
+          <p class="service-meta"><span class="price">6,000 HUF</span> · <span class="duration">30 min</span></p>
+          <button id="Anywhere_button_haircut" class="service-book-btn anywhere-book-now-button" type="button" data-booking-url="https://kissacoe.setmore.com/en/services/f5b180a1-7285-45f3-9710-2e8f246059a9" data-new-tab="false">Book</button>
+        </div>
+
+        <div class="service-card">
+          <h3>Shaving</h3>
+          <p class="service-desc">Traditional hot towel shave with a straight razor.</p>
+          <p class="service-meta"><span class="price">5,000 HUF</span> · <span class="duration">30 min</span></p>
+          <button id="Anywhere_button_shaving" class="service-book-btn anywhere-book-now-button" type="button" data-booking-url="https://kissacoe.setmore.com/en/categories/218d60ea-d850-452d-99a3-15b8fa4974aa" data-new-tab="false">Book</button>
+        </div>
+
+        <div class="service-card">
+          <h3>Beard Trimming</h3>
+          <p class="service-desc">Precise beard shaping and trimming, tailored to your face shape.</p>
+          <p class="service-meta"><span class="price">3,500 HUF</span> · <span class="duration">20 min</span></p>
+          <button id="Anywhere_button_beard" class="service-book-btn anywhere-book-now-button" type="button" data-booking-url="https://kissacoe.setmore.com/en/categories/218d60ea-d850-452d-99a3-15b8fa4974aa" data-new-tab="false">Book</button>
+        </div>
+
+        <div class="service-card">
+          <h3>Styling</h3>
+          <p class="service-desc">Styling with premium products, so your cut holds its shape long after you leave.</p>
+          <p class="service-meta"><span class="price">2,500 HUF</span> · <span class="duration">15 min</span></p>
+          <button id="Anywhere_button_styling" class="service-book-btn anywhere-book-now-button" type="button" data-booking-url="https://kissacoe.setmore.com/en/categories/218d60ea-d850-452d-99a3-15b8fa4974aa" data-new-tab="false">Book</button>
+        </div>
+      </div>
+
+      <!--
+        Setmore "Book Now" widget szkriptje – egyszer töltjük be az egész
+        oldalra. A fejlécben (nav + hero gomb) lévő foglalás-gombok korábban
+        vannak a HTML-ben, de mivel ez a szkript nem async/defer, csak
+        akkor fut le, amikor a böngésző idáig ért a beolvasásban – vagyis a
+        fentebbi gombok már mind a DOM részei, a szkript ezeket is megtalálja
+        és bekapcsolja.
+      -->
+      <script id="anywhere_book_now_script" src="https://assets.setmore.com/integration/book-now/live/v1/anywhere-book-now.js"></script>
+    </div>
+  </section>
+
+  <!-- Galéria szekció -->
+  <section id="gallery" class="section gallery">
+    <div class="container">
+      <h2>Gallery</h2>
+      <p class="section-lead">A few photos from our salon and our finished work.</p>
+
+      <div
+        class="gallery-grid"
+        id="galleryGrid"
+        data-gallery-owner="PixelPekseg"
+        data-gallery-repo="selyemhaj-demo"
+        data-gallery-path="gallery"
+        data-gallery-alt="Gallery photo from the salon"
+        data-gallery-local="haircut-1.jpg,haircut-2.jpg,haircut-3.jpg,haircut-4.jpg,haircut-5.jpg,haircut-6.jpg,haircut-7.jpg"
+        data-gallery-local-path="../gallery">
+      </div>
+      <p class="section-lead gallery-empty" id="galleryEmpty" hidden>Gallery photos will be added here soon.</p>
+    </div>
+  </section>
+
+  <!-- Nyitvatartás szekció -->
+  <section id="hours" class="section hours">
+    <div class="container">
+      <h2>Opening Hours</h2>
+      <table class="hours-table">
+        <tbody>
+          <tr><td>Monday</td><td>8:00 AM – 6:00 PM</td></tr>
+          <tr><td>Tuesday</td><td>8:00 AM – 6:00 PM</td></tr>
+          <tr><td>Wednesday</td><td>8:00 AM – 6:00 PM</td></tr>
+          <tr><td>Thursday</td><td>8:00 AM – 6:00 PM</td></tr>
+          <tr><td>Friday</td><td>8:00 AM – 6:00 PM</td></tr>
+          <tr><td>Saturday</td><td>9:00 AM – 6:00 PM</td></tr>
+          <tr><td>Sunday</td><td class="closed">Closed</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Megközelíthetőség szekció (Google Maps) -->
+  <!--
+    A cím mindkét helyen (iframe src és a gomb href-je) ugyanaz:
+    "Király utca 100, 1068 Budapest" – ha módosítod a valódi címre,
+    mindkét helyen cseréld le ugyanarra a szövegre (mindkét nyelvi fájlban).
+  -->
+  <section id="location" class="section location">
+    <div class="container">
+      <h2>Find Us</h2>
+      <p class="section-lead">Király utca 100, 1068 Budapest, Hungary</p>
+
+      <div class="map-wrapper">
+        <iframe
+          src="https://www.google.com/maps?q=Király utca 100, 1068 Budapest&output=embed"
+          width="100%"
+          height="350"
+          style="border:0"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Volkov Oleh Men's hairdresser on the map">
+        </iframe>
+      </div>
+
+      <div class="map-cta">
+        <a
+          class="btn btn-primary"
+          href="https://www.google.com/maps/dir/?api=1&destination=Király utca 100, 1068 Budapest"
+          target="_blank"
+          rel="noopener noreferrer">
+          Get Directions
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lábléc -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <!--
+        Elérhetőségek: az Instagram linket és a telefonszámot cseréld le,
+        ha változik (a telefon href nemzetközi formátumban legyen, '+' és
+        szóközök nélkül, pl. 36305258133). Mindkét nyelvi fájlban ugyanígy!
+      -->
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <div class="contact-links">
+          <a class="contact-link" href="https://www.instagram.com/ferrumwolf" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+              <circle cx="12" cy="12" r="4"></circle>
+              <circle cx="17.3" cy="6.7" r="0.6" fill="currentColor" stroke="none"></circle>
+            </svg>
+            <span>Instagram</span>
+          </a>
+
+          <a class="contact-link" href="https://wa.me/36305258133?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 20l1.2-4.2A8 8 0 1 1 8.4 19L4 20z"></path>
+              <path d="M8.7 9.6c.3 2.6 2.3 4.6 4.9 4.9"></path>
+            </svg>
+            <span>WhatsApp</span>
+          </a>
+
+          <a class="contact-link" href="tel:+36305258133" aria-label="Phone">
+            <svg viewBox="0 0 24 24" fill="currentColor" stroke="none">
+              <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1L6.6 10.8z"></path>
+            </svg>
+            <span>+36 30 525 8133</span>
+          </a>
+        </div>
+      </div>
+
+      <p>&copy; <span id="year"></span> Volkov Oleh – Men's hairdresser. All rights reserved.</p>
+      <p>Király utca 100, 1068 Budapest, Hungary</p>
+    </div>
+  </footer>
+
+  <!-- Nyelvválasztó felugró ablak (modal) -->
+  <div class="lang-modal" id="langModal">
+    <div class="lang-modal-backdrop" id="langModalBackdrop"></div>
+    <div class="lang-modal-box" role="dialog" aria-modal="true" aria-label="Select language">
+      <div class="lang-modal-header">
+        <h3>Select language</h3>
+        <button class="lang-modal-close" id="langModalClose" type="button" aria-label="Close">&times;</button>
+      </div>
+      <div class="lang-modal-list">
+        <a class="lang-modal-option" href="../index.html">
+          <svg class="flag" viewBox="0 0 30 20"><rect width="30" height="6.67" fill="#CE2939"/><rect y="6.67" width="30" height="6.67" fill="#fff"/><rect y="13.34" width="30" height="6.66" fill="#477050"/></svg>
+          Magyar
+        </a>
+        <a class="lang-modal-option active" href="index.html">
+          <svg class="flag" viewBox="0 0 30 20"><rect width="30" height="20" fill="#00247D"/><path d="M0,0 L30,20 M30,0 L0,20" stroke="#fff" stroke-width="4"/><path d="M0,0 L30,20 M30,0 L0,20" stroke="#CF142B" stroke-width="2"/><path d="M15,0 V20 M0,10 H30" stroke="#fff" stroke-width="6"/><path d="M15,0 V20 M0,10 H30" stroke="#CF142B" stroke-width="3.6"/></svg>
+          English
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Galéria kép nagyítása felugró ablakban (lightbox) -->
+  <div class="lightbox" id="galleryLightbox">
+    <div class="lightbox-backdrop" id="galleryLightboxBackdrop"></div>
+    <button class="lightbox-close" id="galleryLightboxClose" type="button" aria-label="Close">&times;</button>
+    <img class="lightbox-img" id="galleryLightboxImg" src="" alt="">
+  </div>
+
+  <script src="../script.js?v=17"></script>
+</body>
+</html>
